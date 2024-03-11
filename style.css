@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+*
+{
+    box-sizing: border-box; /*if i give 300 pixle width to any element it will remain 300 even if change in paddin wadding occurs*/
+    padding: 0;
+    margin: 0;
+}
+
+
+
+body{
+
+    font-family: "Poppins", sans-serif;
+}
+
+
+a{
+text-decoration: none;
+color: white;
+}
+.header{
+    position: relative;/*Jiske center mei karna hei usko position relative aur jisko center m karna usko posistion absolute*/
+    min-height: 60vh;
+    background: url(/bgimage.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:white
+}
+
+
+
+.container{
+    max-width: 1200px;
+    margin: auto;
+    width: 90%;/*Relative to paren it is for small size screen*/
+}
+
+
+
+.nav {
+    min-height: 8vh;
+    display: flex; /*Will make website and links side by side */
+    justify-content: space-between;/* create space between website website and links*/
+    align-items: center;
+}
+
+
+
+.nav-items{
+    width: 40%;
+    display: flex;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+
+.headline{
+    text-align: center;
+
+    /* cursor: pointer; */
+
+    /* height: 50px; */
+
+    position: absolute;      /*isko header(relative ke center mei karna hei)*/
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/*it will make proper center of headline div*/
+}
+
+
+.btn{
+    display: inline-block;
+    outline: none;
+    border: none;
+    cursor: pointer;/*when we will hover on button it will create a hand on it*/
+}
+
+.btn-headline
+{
+    padding: 1rem/*upr niche*/ 2rem/*ddaye baaye*/;/*size of root element here root element is html and 1rem=16px by default*/
+    font-size: 1rem;
+    margin-top: 16px;
+    font-weight: 600;
+}
+
+
+/*Section part coding started*/
+
+.todo-section
+{
+    margin-top: 5rem;
+    text-align: center;
+}
+
+/* Adding through javascript */
+/* .bg-dark
+{
+  background: #000;
+  color: white;
+} */
+
+.form-todo
+{
+    
+    min-height: 5vh;
+    display: flex;/*All in put will move on right side and will be ek ke niche ek */
+    justify-content: space-between;/*2px space between*/
+    margin-top: 1rem;
+}
+
+
+.form-todo input
+{
+    min-height: 100%;
+}
+
+.form-todo input[type="text"]
+{
+    width: 78%;
+    padding: 0.8rem;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.form-todo input[type="submit"]
+{
+    width: 20%;
+    background-color: #183838e7;
+    color: white;
+    font-weight: bold;
+    
+}
+
+.todo-list
+{
+    text-align: left;
+    padding-left: 4.5rem;
+    padding-right: 4.5rem;
+    font-size: 1.2rem;
+    list-style-type: none;
+}
+.todo-list li{
+    padding: 0.7rem;
+    background: #444;
+    color: cyan;
+    margin-top: 1rem ;
+    text-transform: capitalize;
+}
+
+/* Signup section */
+
+.section-signup{
+    margin: 5rem auto;
+    text-align: center;
+    background: #cad3d3e7;
+    color: rgb(5, 5, 5);
+}
+
+.signup-form
+{
+    max-width: 800px;
+    margin: auto;
+    width:95%; /*for small screens */
+    text-align: left;
+}
+.signup-form label {
+ display: block;
+
+}
+
+.signup-form input
+{
+    display: block;
+    width: 100%;
+    padding: 0.5rem;
+}
+
+.form-group
+{
+    margin-top: 1rem;
+}
+
+.signup-form textarea
+{
+    width: 100%;
+}
+
+.signup-btn
+{
+    background-color:#183838e7 ;
+    color: aliceblue;
+    padding: 1rem 2rem;
+    display: block;
+    margin: auto;
+    
+    margin-top: 1rem;
+
+    /*Move it into center */
+}
